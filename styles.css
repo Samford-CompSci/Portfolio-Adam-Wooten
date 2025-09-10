@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+
+header {
+  background: #234;
+  padding: 0.5em 0;
+  box-shadow: 0 2px 8px rgba(30,40,60,0.05);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+  padding-bottom: 4px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+main {
+  padding: 2em 0;
+}
+
+.intro, .bio, .projects, .project-card, main > h1, main > p, iframe {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 2em;
+}
+
+.intro, .bio, .project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.intro {
+  text-align: center;
+}
+
+.bio {
+  margin-top: 1em;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.project-card {
+  margin: 0;
+  padding: 1.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #234;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .intro, .bio, .project-card, main > h1, main > p, iframe {
+    margin: 1em;
+    padding: 1em;
+    max-width: 95vw;
+  }
+  .projects {
+    gap: 1em;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}

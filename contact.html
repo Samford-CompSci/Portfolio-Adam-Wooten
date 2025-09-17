@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Contact | Adam Wooten</title>
   <link rel="stylesheet" href="styles.css"/>
+  <script>
+    function copyEmail() {
+      navigator.clipboard.writeText('awooten@samford.edu');
+      const btn = document.getElementById('copy-email-btn');
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = 'Copy Email'; }, 1500);
+    }
+    function copyPhone() {
+      navigator.clipboard.writeText('678-894-5603');
+      const btn = document.getElementById('copy-phone-btn');
+      btn.innerText = 'Copied!';
+      setTimeout(() => { btn.innerText = 'Copy Phone'; }, 1500);
+    }
+  </script>
 </head>
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
+      <span class="nav-logo">WOOTEN.TECH</span>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="bio.html">Bio</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
     </nav>
   </header>
   <main>
-    <h1>Contact</h1>
-    <p>Email: <a href="mailto:your.email@samford.edu">your.email@samford.edu</a></p>
-    <p>
-      <a href="https://github.com/Adam-Wooten13" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank">LinkedIn</a> |
-      <a href="https://instagram.com/YOUR-INSTAGRAM" target="_blank">Instagram</a> |
-      <a href="https://twitter.com/YOUR-TWITTER" target="_blank">Twitter</a>
-    </p>
+    <section>
+      <h1>Contact</h1>
+      <div class="card">
+        <p>Email: <a href="mailto:awooten@samford.edu">awooten@samford.edu</a>
+          <button class="button-cyber" id="copy-email-btn" onclick="copyEmail()">Copy Email</button>
+        </p>
+        <p>Phone: <a href="tel:6788945603">678-894-5603</a>
+          <button class="button-cyber" id="copy-phone-btn" onclick="copyPhone()">Copy Phone</button>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Social Links</h3>
+        <a href="https://github.com/Adam-Wooten13" target="_blank" class="button-cyber">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" class="button-cyber">LinkedIn</a>
+      </div>
+    </section>
+    <button class="button-cyber" onclick="window.location.href='index.html'">Back to Home</button>
   </main>
-  <footer>
-    <p>&copy; 2025 Adam Wooten</p>
-  </footer>
 </body>
 </html>

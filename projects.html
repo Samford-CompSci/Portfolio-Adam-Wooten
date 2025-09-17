@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Projects | Adam Wooten</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <span class="nav-logo">WOOTEN.TECH</span>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="bio.html">Bio</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
   <main>
-    <h1>GitHub Projects</h1>
-    <div class="projects">
-      <div class="project-card">
+    <section>
+      <h1>Projects</h1>
+      <div class="card">
         <h2>Sample Project One</h2>
         <p>A tool to automate daily tasks. Designed with Python and Flask.</p>
         <p><strong>Tech:</strong> Python, Flask, HTML, CSS</p>
-        <a href="https://github.com/Samford-CompSci/assignment-2-Adam-Wooten13" target="_blank">View on GitHub</a>
-        <!-- <img src="assets/screenshots/project1.png" alt="Screenshot" /> -->
+        <a href="https://github.com/Samford-CompSci/assignment-2-Adam-Wooten13" target="_blank" class="button-cyber">View on GitHub</a>
       </div>
-      <div class="project-card">
+      <div class="card">
         <h2>Sample Project Two</h2>
         <p>A web app for tracking study habits and productivity.</p>
         <p><strong>Tech:</strong> JavaScript, Node.js, Express</p>
-        <a href="https://github.com/FultonBrowne/os-class" target="_blank">View on GitHub</a>
+        <a href="https://github.com/FultonBrowne/os-class" target="_blank" class="button-cyber">View on GitHub</a>
       </div>
-      <div class="project-card">
+      <div class="card">
         <h2>Sample Project Three</h2>
         <p>Collaborative project for a class, focusing on algorithms and data structures.</p>
         <p><strong>Tech:</strong> C++, Python</p>
-        <a href="https://github.com/noahmb409/cosc320project" target="_blank">View on GitHub</a>
+        <a href="https://github.com/noahmb409/cosc320project" target="_blank" class="button-cyber">View on GitHub</a>
       </div>
-    </div>
+    </section>
+    <button class="button-cyber" onclick="window.location.href='index.html'">Back to Home</button>
   </main>
-  <footer>
-    <p>&copy; 2025 Adam Wooten</p>
-  </footer>
 </body>
 </html>

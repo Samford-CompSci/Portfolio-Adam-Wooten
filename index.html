@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="cyber-bg"></div>
   <header>
     <nav>
       <span class="nav-logo">WOOTEN.TECH</span>
@@ -24,29 +23,36 @@
   <main>
     <section>
       <h1>Adam Wooten</h1>
-      <p>Welcome to my portfolio, where tech meets creativity. Explore my projects, learn about my journey, and see what I'm building in the world of <span style="color: var(--neon-blue); font-weight: bold;">cyber</span> and <span style="color: var(--neon-pink); font-weight: bold;">technology</span>.</p>
+      <div class="card">
+        <p>
+          Welcome to my cyber/tech portfolio.<br>
+          Explore my projects, learn about my background, and see what I’m building in the world of <b>technology</b> and <b>security</b>.
+        </p>
+      </div>
+      <button class="button-cyber" onclick="window.location.href='projects.html'">See Projects</button>
+      <button class="button-cyber" onclick="window.location.href='resume.html'">View Resume</button>
+      <button class="button-cyber" onclick="window.location.href='contact.html'">Contact Me</button>
     </section>
 
     <section>
       <h2>Featured Skillset</h2>
-      <ul>
-        <li>Cybersecurity Fundamentals & Ethical Hacking</li>
-        <li>Web Development (HTML, CSS, JavaScript)</li>
-        <li>Python, Bash, C/C++</li>
-        <li>Linux, Networking, Digital Forensics</li>
-        <li>Cloud & Automation Tools</li>
-      </ul>
+      <div class="card">
+        <ul>
+          <li>Cybersecurity Fundamentals & Ethical Hacking</li>
+          <li>Web Development (HTML, CSS, JavaScript)</li>
+          <li>Python, Bash, C/C++</li>
+          <li>Linux, Networking, Digital Forensics</li>
+          <li>Cloud & Automation Tools</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>Latest Projects</h2>
-      <p>Check out my <a href="projects.html" style="color: var(--neon-blue); text-decoration: underline;">Projects</a> page for in-depth writeups and code.</p>
-      <button class="button-cyber" onclick="location.href='projects.html'">See Projects</button>
-    </section>
-
-    <section>
-      <h2>Get in Touch</h2>
-      <p>Want to collaborate, ask a question, or connect? <a href="contact.html" style="color: var(--neon-pink); text-decoration: underline;">Contact me</a>!</p>
+      <div class="card">
+        <p>Check out my <a href="projects.html" style="color: var(--primary); text-decoration: underline;">Projects</a> for writeups and code.</p>
+        <button class="button-cyber" onclick="window.location.href='projects.html'">See Projects</button>
+      </div>
     </section>
   </main>
 </body>
